@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+ 		<!-- USING THE REF KEYWORD  & using setters -->
+         <!-- <bean class="org.kodnest.SpringFrameWork.AutoWiring.Mobile"  id="mob">
+          <property name="brand"  value="Onepluse"></property>
+          <property name="Ram"  value="8"></property>
+          <property name="price"  value="30000"></property>
+         </bean>   --> 
+         
+         <!-- <bean class="org.kodnest.SpringFrameWork.AutoWiring.Mobile"  id="mob2">
+            <property name="brand"  value="sumsang"></property>
+            <property name="Ram"  value="16"></property>
+            <property name="price"  value="45000"></property>
+         </bean> -->
+        
+         <!-- <bean class ="org.kodnest.SpringFrameWork.AutoWiring.Person" id ="per"  >
+           <property name="mob"  ref="mob"/> 
+         </bean> -->
+  <!-- ******************************************************************************************************** -->
+  		  <!-- BYNAME -->
+  		 <!-- <bean class="org.kodnest.SpringFrameWork.AutoWiring.Mobile"  id="mob">
+          <property name="brand"  value="Onepluse"></property>
+          <property name="Ram"  value="8"></property>
+          <property name="price"  value="30000"></property>
+         </bean>
+  		 
+         <bean class ="org.kodnest.SpringFrameWork.AutoWiring.Person" id ="per" autowire="byName">
+           
+         </bean>  
+  
+  		<bean class="org.kodnest.SpringFrameWork.AutoWiring.Mobile"  id="mob2">
+            <property name="brand"  value="sumsang"></property>
+            <property name="Ram"  value="16"></property>
+            <property name="price"  value="45000"></property>
+         </bean>
+        <bean class ="org.kodnest.SpringFrameWork.AutoWiring.Person" id ="per2"  autowire="byName">
+          </bean>   -->  
+    <!-- ******************************************************************************************************** -->
+  
+   
+   
+  <!-- byType -->
+   <!--   <bean class="org.kodnest.SpringFrameWork.AutoWiring.Mobile"  >
+          <property name="brand"  value="Onepluse"/> 
+          <property name="Ram"  value="8"/> 
+          <property name="price"  value="30000" /> 
+        </bean>
+      <bean class ="org.kodnest.SpringFrameWork.AutoWiring.Person" id ="per"  autowire="byType">
+      </bean> -->    
+   
+   
+   
+     <!-- ******************************************************************************************************** -->
+     
+     <bean class="org.kodnest.SpringFrameWork.AutoWiring.Mobile"  >
+          <property name="brand"  value="Onepluse"/> 
+          <property name="Ram"  value="8"/> 
+          <property name="price"  value="30000" /> 
+        </bean>
+      <bean class ="org.kodnest.SpringFrameWork.AutoWiring.Person" id ="per"  autowire="constructor">
+      </bean> 
+      
+      
+   <!-- ******************************************************************************************************** -->
+     
+     
+ 
+ <!-- injection using the constructor --> 
+   
+     
+<!--     <bean class="org.kodnest.SpringFrameWork.AutoWiring.Mobile"  id="mob">
+      <constructor-arg value ="Onepluse"></constructor-arg>
+      <constructor-arg  value="8"></constructor-arg>
+      <constructor-arg value="30000"></constructor-arg>     
+  </bean> --> 
+    
+   </beans>
