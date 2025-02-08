@@ -10,8 +10,8 @@ Input: List = ["G", "e", "e", "k", "s"]
 Output: List = ["G", "e", "k", "s"]*/
 public class RemoveArrayListDuplicates {
 public static void main(String[] args) {
-    // stringList();
-     //integerList();
+     stringList();
+     integerList();
      reverseArrayList();
 }
 
