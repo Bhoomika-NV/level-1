@@ -30,11 +30,11 @@ public class RemoveArrayListDuplicates {
 		//reverse list without another array using another array
 		int start=list.get(0);
 		int end=list.size()-1;
-      while(start<end) {
-    	  start=list.set(start,list.get(end));
-    	  end=list.set(start,list.get(start));
-    	  start++;
-    	  end--;
+             while(start<end) {
+    	         start=list.set(start,list.get(end));
+    	         end=list.set(start,list.get(start));
+    	         start++;
+    	         end--;
       }
       for(Integer i: list) {
     	  System.out.print(i+" ");
